@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+    </head>
+    <body>
+        <script>
+            function EsGrito(f){
+                let flag = '<h3>escrito</h3>';
+                let countEx = 0;
+                let countABC = 0;
+                for(let i = 0; i < f.length; i++){
+                    if(f.charAt(i) == '!'){
+                        countEx++;
+                    }
+                    if((f.charAt(i)).match(/[a-z]/i)){
+                        countABC++;
+                    }
+                }
+                if(countEx > countABC){
+                    flag = '<h2>ESGRITO</h2>';
+                }
+                return flag;
+            }
+
+            let frase = prompt('ingrese una frase','');
+
+            document.write(EsGrito(frase));
+        </script>
+    </body>
+</html>
