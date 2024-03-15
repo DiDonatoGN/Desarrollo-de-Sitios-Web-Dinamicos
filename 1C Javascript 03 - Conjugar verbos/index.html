@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Ejercicio 3</title>
+    </head>
+    <body>
+        <script>
+            function Conjugar(f, tiempoF){
+                let flag;
+                let UltSib=f.charAt(f.length -2);
+                let raiz=f.slice(0, -2);
+                document.write('r='+raiz+' us='+UltSib+'  tf='+tiempoF+' <br>F='+f+'<br>');
+                if(tiempoF=='p'||tiempoF=='P'){
+                    if(UltSib=='A'||UltSib=='a'){
+                        document.write('Yo '+raiz+'é<br>Tú '+raiz+'aste<br>Él '+raiz+'ó<br>Nosotros '+raiz+'amos<br>Vosotros '+raiz+'ásteis<br>Ellos '+raiz+'aron<br>');
+                    }
+                    if(UltSib=='E'||UltSib=='e'){
+                        document.write('Yo '+raiz+'í<br>Tú '+raiz+'iste<br>Él '+raiz+'ió<br>Nosotros '+raiz+'imos<br>Vosotros '+raiz+'ísteis<br>Ellos '+raiz+'ieron<br>');
+                    }
+                    if(UltSib=='I'||UltSib=='i'){
+                        document.write('Yo ' + raiz + 'í<br>Tú ' + raiz + 'iste<br>Él ' + raiz + 'ió<br>Nosotros ' + raiz + 'imos<br>Vosotros ' + raiz + 'isteis<br>Ellos ' + raiz + 'ieron<br>');
+                    }
+                }
+                if(tiempoF=='a'||tiempoF=='A'){
+                    if(UltSib=='A'||UltSib=='a'){
+                        document.write('Yo '+raiz+'o<br>Tú '+raiz+'as<br>Él '+raiz+'a<br>Nosotros '+raiz+'amos<br>Vosotros '+raiz+'áis<br>Ellos '+raiz+'an<br>');
+                    }
+                    if(UltSib=='E'||UltSib=='e'){
+                        document.write('Yo '+raiz+'o<br>Tú '+raiz+'es<br>Él '+raiz+'e<br>Nosotros '+raiz+'emos<br>Vosotros '+raiz+'éis<br>Ellos '+raiz+'en<br>');
+                    }
+                    if(UltSib=='I'||UltSib=='i'){
+                        document.write('Yo ' + raiz + 'o<br>Tú ' + raiz + 'es<br>Él ' + raiz + 'e<br>Nosotros ' + raiz + 'imos<br>Vosotros ' + raiz + 'ís<br>Ellos ' + raiz + 'en<br>');
+                    }}
+                 if(tiempoF=='f'||tiempoF=='F'){
+                    if(UltSib=='A'||UltSib=='a'){
+                        document.write('Yo '+raiz+'aré<br>Tú '+raiz+'arás<br>Él '+raiz+'ará<br>Nosotros '+raiz+'aremos<br>Vosotros '+raiz+'aréis<br>Ellos '+raiz+'arán<br>');
+                    }
+                    if(UltSib=='E'||UltSib=='e'){
+                        document.write('Yo '+raiz+'eré<br>Tú '+raiz+'erás<br>Él '+raiz+'erá<br>Nosotros '+raiz+'eremos<br>Vosotros '+raiz+'eréis<br>Ellos '+raiz+'erán<br>');
+                    }
+                    if(UltSib=='I'||UltSib=='i'){
+                        document.write('Yo ' + raiz + 'iré<br>Tú ' + raiz + 'irás<br>Él ' + raiz + 'irá<br>Nosotros ' + raiz + 'iremos<br>Vosotros ' + raiz + 'iréis<br>Ellos ' + raiz + 'irán<br>');
+                    }
+                }
+                }
+            
+
+            let frase = prompt('ingrese una verbo en infinitivo','');
+            let tiempo = prompt('Ingrese el tiempo: Presente (A) Preterito (P) Futuro (F)','')
+            Conjugar(frase.toLowerCase(frase), tiempo);
+            
+        </script>
+    </body>
+</html>
