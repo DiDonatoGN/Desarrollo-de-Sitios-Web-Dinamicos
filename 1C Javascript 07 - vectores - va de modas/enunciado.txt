@@ -1,0 +1,23 @@
+Dado un conjunto, o distribuci ́on, de valores se define la moda como el valor (o valores) que m ́as se
+repite en dicho conjunto.
+En este problema te pedimos que calcules la moda de un conjunto de n ́umeros.
+Entrada
+La entrada consta de una serie de casos de prueba.
+Cada caso comienza con un n ́umero que representa el n ́umero de valores que tiene el conjunto, que
+nunca ser ́a mayor de 25.000. En la siguiente l ́ınea se proporcionan, separados por espacio, los valores de
+todos los elementos del conjunto. Todos ellos ser ́an n ́umeros enteros.
+La entrada terminar ́a con una serie de 0 valores.
+Salida
+Para cada caso de prueba se mostrar ́a la moda de la distribuci ́on, es decir el n ́umero que m ́as se
+repite.
+Se garantiza que ning un caso de prueba contendr ́a m ́as de una moda, es decir  ́unicamente habr ́a un
+valor que aparezca el mayor n ́umero de veces.
+Entrada de ejemplo
+11
+1 2 2 3 3 3 4 4 4 4 5
+17
+1 8 9 6 3 2 1 5 4 7 9 6 3 2 1 4 7
+0
+Salida de ejemplo
+4
+1
